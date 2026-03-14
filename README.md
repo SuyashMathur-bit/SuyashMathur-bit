@@ -1,1 +1,1 @@
-<!  img 'src'='flipping-phone.svg'  >
+img 'src'='flipping-phone.svg'  >
