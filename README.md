@@ -1,1 +1,2 @@
-![Phone Animation](flipping-phone.svg)
+phone-animation.gif
+![Phone Animation](phone-animation.gif)
