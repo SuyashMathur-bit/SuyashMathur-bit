@@ -1,1 +1,1 @@
-![Phone Animation](https://suyashmathur-bit.github.io/flipping-phone.svg)
+![Phone Animation](flipping-phone.svg)
