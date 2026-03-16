@@ -1,2 +1,1 @@
-phone-animation.gif
-![Phone Animation](phone-animation.gif)
+phone-animation.gif![Phone Animation](phone-animation.gif)
