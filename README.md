@@ -1,4 +1,1 @@
-<p align="center">
-<img src="https://suyashmathur-bit.github.io/flipping-phone.svg" width="900">
-</p>
-
+![image](68747470733a2f2f7375796173686d61746875722d6269742e6769746875622e696f2f666c697070696e672d70686f6e652e737667)
