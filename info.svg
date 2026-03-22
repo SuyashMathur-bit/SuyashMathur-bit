@@ -15,7 +15,7 @@
 
         .phone-card {
           width: 580px;
-          height: 320px;
+          height: 340px; /* Increased height slightly */
           position: relative;
           transform-style: preserve-3d;
           animation: flip 8s infinite ease-in-out;
@@ -35,13 +35,14 @@
           border: 3px solid #30363d;
           display: flex;
           flex-direction: column;
-          justify-content: center;
+          justify-content: center; /* Keeps everything vertically centered */
           box-sizing: border-box;
+          overflow: hidden;
         }
 
         .front {
           background: #161b22;
-          padding: 30px 45px;
+          padding: 20px 40px; /* Reduced vertical padding */
           text-align: center;
         }
 
@@ -57,8 +58,8 @@
           left: 15px;
           top: 50%;
           transform: translateY(-50%);
-          width: 60px;
-          height: 250px;
+          width: 55px;
+          height: 260px;
           background: #080a0d;
           border-radius: 25px;
           border: 2px solid #30363d;
@@ -70,41 +71,41 @@
         }
 
         .lens {
-          width: 35px;
-          height: 35px;
+          width: 32px;
+          height: 32px;
           border-radius: 50%;
           background: radial-gradient(circle at 30% 30%, #2a2e38, #000);
           border: 2px solid #444;
         }
 
-        .title { font-size: 28px; font-weight: 900; color: #ffffff; margin: 0; letter-spacing: -0.5px; }
+        .title { font-size: 26px; font-weight: 900; color: #ffffff; margin: 0; }
         .highlight { color: #58a6ff; }
         
         .sub-role {
           color: #8b949e;
-          font-size: 12px;
+          font-size: 11px;
           font-weight: 700;
           text-transform: uppercase;
           letter-spacing: 1px;
-          margin-top: 5px;
+          margin: 8px 0;
         }
 
         .bio-text { 
           color: #c9d1d9; 
           font-size: 13px; 
-          line-height: 1.6; 
-          margin-top: 15px; 
+          line-height: 1.5; 
+          margin: 0;
           font-weight: 400;
         }
 
         .stats-badge {
           display: inline-block;
-          margin-top: 18px;
+          margin-top: 15px;
           background: rgba(88, 166, 255, 0.1);
           color: #58a6ff;
-          padding: 5px 15px;
+          padding: 4px 12px;
           border-radius: 20px;
-          font-size: 11px;
+          font-size: 10px;
           font-weight: 800;
           border: 1px solid rgba(88, 166, 255, 0.3);
           text-transform: uppercase;
@@ -121,11 +122,11 @@
           display: flex;
           flex-direction: column;
           align-items: center;
-          gap: 8px;
+          gap: 5px;
         }
 
-        .skill-item img { width: 32px; height: 32px; }
-        .skill-item span { color: #c9d1d9; font-size: 11px; font-weight: 600; }
+        .skill-item img { width: 30px; height: 30px; }
+        .skill-item span { color: #c9d1d9; font-size: 10px; font-weight: 600; }
       </style>
 
       <div class="container">
@@ -135,7 +136,7 @@
             <div class="sub-role">Android Developer | AI &amp; ML | DSA Learner</div>
             <p class="bio-text">
               I’m a passionate developer who enjoys building <span class="highlight">mobile applications</span> and exploring AI. 
-              I love turning ideas into reality and constantly improving my problem-solving skills through DSA.
+              I love turning ideas into reality and improving my problem-solving skills through DSA.
             </p>
             <div class="stats-badge">Solved 200+ LeetCode Problems</div>
           </div>
@@ -146,7 +147,6 @@
               <div class="lens"></div>
               <div class="lens"></div>
             </div>
-
             <div class="skills-grid">
               <div class="skill-item">
                 <img src="https://cdn.simpleicons.org/python" alt="Python" />
