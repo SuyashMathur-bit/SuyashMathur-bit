@@ -1,181 +1,75 @@
-<svg fill="none" viewBox="0 0 800 450" width="800" height="450" xmlns="http://www.w3.org/2000/svg">
-  <foreignObject width="100%" height="100%">
-    <div xmlns="http://www.w3.org/1999/xhtml">
-      <style>
-        .container {
-          width: 800px;
-          height: 450px;
-          background: transparent;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          perspective: 1000px;
-          font-family: 'Inter', -apple-system, sans-serif;
-        }
+<svg width="1000" height="500" viewBox="0 0 1000 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&amp;display=swap');
+    
+    /* Subtle floating animation to emphasize the 3D effect */
+    .mobile-frame {
+      animation: float 8s infinite ease-in-out;
+      transform-origin: 500px 250px;
+    }
 
-        .phone-card {
-          width: 580px;
-          height: 340px; /* Increased height slightly */
-          position: relative;
-          transform-style: preserve-3d;
-          animation: flip 8s infinite ease-in-out;
-        }
+    @keyframes float {
+      0%, 100% { transform: translate(0, 0); }
+      50% { transform: translate(15px, -10px); }
+    }
 
-        @keyframes flip {
-          0%, 45% { transform: rotateY(0deg); }
-          55%, 100% { transform: rotateY(180deg); }
-        }
+    .text { font-family: 'Inter', sans-serif; fill: white; }
+    .title { font-size: 28px; font-weight: 900; letter-spacing: -0.5px; }
+    .blue { fill: #58a6ff; }
+    .dim { fill: #8b949e; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
+    .bio { fill: #c9d1d9; font-size: 15px; line-height: 1.6; font-weight: 400; }
+    .stack-header { fill: white; font-size: 18px; font-weight: 800; letter-spacing: 1px; }
+    .skill-text { fill: #c9d1d9; font-size: 12px; font-weight: 600; }
+  </style>
 
-        .face {
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          backface-visibility: hidden;
-          border-radius: 35px;
-          border: 3px solid #30363d;
-          display: flex;
-          flex-direction: column;
-          justify-content: center; /* Keeps everything vertically centered */
-          box-sizing: border-box;
-          overflow: hidden;
-        }
+  <g class="mobile-frame">
+    <rect x="75" y="75" width="850" height="350" rx="40" fill="#010409" stroke="#30363d" stroke-width="4"/>
+    <rect x="80" y="80" width="840" height="340" rx="35" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
+    
+    <rect x="95" y="95" width="810" height="310" rx="28" fill="#010409" stroke="#161b22" stroke-width="2"/>
 
-        .front {
-          background: #161b22;
-          padding: 20px 40px; /* Reduced vertical padding */
-          text-align: center;
-        }
+    <ellipse cx="125" cy="250" rx="8" ry="8" fill="#0d1117" stroke="#444"/>
+    <circle cx="125" cy="250" r="5" fill="black"/>
 
-        .back {
-          background: #0d1117;
-          transform: rotateY(180deg);
-          padding: 20px 20px 20px 95px; 
-          align-items: center;
-        }
+    <g transform="translate(160, 120)">
+      <text x="0" y="0" class="text title">About <tspan class="blue">Me</tspan></text>
+      <text x="0" y="28" class="text dim">Android Developer | AI &amp; ML | DSA Learner</text>
+      
+      <text x="0" y="65" class="text bio">I’m a passionate developer who enjoys building</text>
+      <text x="0" y="90" class="text bio">mobile applications and exploring the world</text>
+      <text x="0" y="115" class="text bio">of Artificial Intelligence. I love turning ideas</text>
+      <text x="0" y="140" class="text bio">into real applications and improving my DSA</text>
+      <text x="0" y="165" class="text bio">problem-solving skills.</text>
 
-        .cam-block {
-          position: absolute;
-          left: 15px;
-          top: 50%;
-          transform: translateY(-50%);
-          width: 55px;
-          height: 260px;
-          background: #080a0d;
-          border-radius: 25px;
-          border: 2px solid #30363d;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: space-around;
-          padding: 10px 0;
-        }
+      <rect x="0" y="200" width="280" height="35" rx="17.5" fill="#58a6ff" fill-opacity="0.1" stroke="#58a6ff" stroke-opacity="0.3"/>
+      <text x="140" y="222" text-anchor="middle" class="text blue" style="font-size: 12px; font-weight: 800;">SOLVED 200+ LEETCODE PROBLEMS</text>
+    </g>
 
-        .lens {
-          width: 32px;
-          height: 32px;
-          border-radius: 50%;
-          background: radial-gradient(circle at 30% 30%, #2a2e38, #000);
-          border: 2px solid #444;
-        }
+    <line x1="560" y1="120" x2="560" y2="380" stroke="#161b22" stroke-width="2"/>
 
-        .title { font-size: 26px; font-weight: 900; color: #ffffff; margin: 0; }
-        .highlight { color: #58a6ff; }
-        
-        .sub-role {
-          color: #8b949e;
-          font-size: 11px;
-          font-weight: 700;
-          text-transform: uppercase;
-          letter-spacing: 1px;
-          margin: 8px 0;
-        }
+    <g transform="translate(600, 120)">
+      <text x="0" y="0" class="text stack-header">Tech <tspan class="blue">Stack</tspan></text>
+      
+      <g transform="translate(0, 30)">
+        <image href="https://cdn.simpleicons.org/python/58a6ff" x="0" y="0" width="30" height="30"/>
+        <text x="40" y="22" class="text skill-text">Python</text>
 
-        .bio-text { 
-          color: #c9d1d9; 
-          font-size: 13px; 
-          line-height: 1.5; 
-          margin: 0;
-          font-weight: 400;
-        }
+        <image href="https://cdn.simpleicons.org/java/58a6ff" x="140" y="0" width="30" height="30"/>
+        <text x="180" y="22" class="text skill-text">Java</text>
 
-        .stats-badge {
-          display: inline-block;
-          margin-top: 15px;
-          background: rgba(88, 166, 255, 0.1);
-          color: #58a6ff;
-          padding: 4px 12px;
-          border-radius: 20px;
-          font-size: 10px;
-          font-weight: 800;
-          border: 1px solid rgba(88, 166, 255, 0.3);
-          text-transform: uppercase;
-        }
+        <image href="https://cdn.simpleicons.org/c/58a6ff" x="0" y="60" width="30" height="30"/>
+        <text x="40" y="82" class="text skill-text">C Language</text>
 
-        .skills-grid {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          gap: 15px;
-          width: 100%;
-        }
+        <image href="https://cdn.simpleicons.org/cplusplus/58a6ff" x="140" y="60" width="30" height="30"/>
+        <text x="180" y="82" class="text skill-text">C++</text>
 
-        .skill-item {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          gap: 5px;
-        }
+        <image href="https://cdn.simpleicons.org/firebase/58a6ff" x="0" y="120" width="30" height="30"/>
+        <text x="40" y="142" class="text skill-text">Firebase</text>
 
-        .skill-item img { width: 30px; height: 30px; }
-        .skill-item span { color: #c9d1d9; font-size: 10px; font-weight: 600; }
-      </style>
-
-      <div class="container">
-        <div class="phone-card">
-          <div class="face front">
-            <h1 class="title">About <span class="highlight">Me</span></h1>
-            <div class="sub-role">Android Developer | AI &amp; ML | DSA Learner</div>
-            <p class="bio-text">
-              I’m a passionate developer who enjoys building <span class="highlight">mobile applications</span> and exploring AI. 
-              I love turning ideas into reality and improving my problem-solving skills through DSA.
-            </p>
-            <div class="stats-badge">Solved 200+ LeetCode Problems</div>
-          </div>
-
-          <div class="face back">
-            <div class="cam-block">
-              <div class="lens"></div>
-              <div class="lens"></div>
-              <div class="lens"></div>
-            </div>
-            <div class="skills-grid">
-              <div class="skill-item">
-                <img src="https://cdn.simpleicons.org/python" alt="Python" />
-                <span>Python</span>
-              </div>
-              <div class="skill-item">
-                <img src="https://cdn.simpleicons.org/java" alt="Java" />
-                <span>Java</span>
-              </div>
-              <div class="skill-item">
-                <img src="https://cdn.simpleicons.org/c" alt="C" />
-                <span>C</span>
-              </div>
-              <div class="skill-item">
-                <img src="https://cdn.simpleicons.org/cplusplus" alt="C++" />
-                <span>C++</span>
-              </div>
-              <div class="skill-item">
-                <img src="https://cdn.simpleicons.org/firebase" alt="Firebase" />
-                <span>Firebase</span>
-              </div>
-              <div class="skill-item">
-                <img src="https://cdn.simpleicons.org/androidstudio" alt="Android Studio" />
-                <span>Android</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </foreignObject>
+        <image href="https://cdn.simpleicons.org/androidstudio/58a6ff" x="140" y="120" width="30" height="30"/>
+        <text x="180" y="142" class="text skill-text">Android</text>
+      </g>
+    </g>
+  </g>
 </svg>
+
