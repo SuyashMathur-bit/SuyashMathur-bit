@@ -42,7 +42,7 @@
       <text x="0" y="165" class="text bio">problem-solving skills.</text>
 
       <rect x="0" y="200" width="280" height="35" rx="17.5" fill="#58a6ff" fill-opacity="0.1" stroke="#58a6ff" stroke-opacity="0.3"/>
-      <text x="140" y="222" text-anchor="middle" class="text blue" style="font-size: 12px; font-weight: 800;">SOLVED 200+ LEETCODE PROBLEMS</text>
+      <text x="140" y="222" text-anchor="middle" class="text blue" style="font-size: 12px; font-weight: 800;">SOLVED 250+ LEETCODE PROBLEMS</text>
     </g>
 
     <line x1="560" y1="120" x2="560" y2="380" stroke="#161b22" stroke-width="2"/>
