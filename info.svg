@@ -51,22 +51,20 @@
       <text x="0" y="0" class="text stack-header">Tech <tspan class="blue">Stack</tspan></text>
       
       <g transform="translate(0, 30)">
-        <image href="https://cdn.simpleicons.org/python/58a6ff" x="0" y="0" width="30" height="30"/>
         <text x="40" y="22" class="text skill-text">Python</text>
 
-        <image href="https://cdn.simpleicons.org/java/58a6ff" x="140" y="0" width="30" height="30"/>
+        
         <text x="180" y="22" class="text skill-text">Java</text>
 
-        <image href="https://cdn.simpleicons.org/c/58a6ff" x="0" y="60" width="30" height="30"/>
+       
         <text x="40" y="82" class="text skill-text">C Language</text>
 
-        <image href="https://cdn.simpleicons.org/cplusplus/58a6ff" x="140" y="60" width="30" height="30"/>
+       
         <text x="180" y="82" class="text skill-text">C++</text>
 
-        <image href="https://cdn.simpleicons.org/firebase/58a6ff" x="0" y="120" width="30" height="30"/>
+       
         <text x="40" y="142" class="text skill-text">Firebase</text>
 
-        <image href="https://cdn.simpleicons.org/androidstudio/58a6ff" x="140" y="120" width="30" height="30"/>
         <text x="180" y="142" class="text skill-text">Android</text>
       </g>
     </g>
